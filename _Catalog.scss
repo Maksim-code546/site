@@ -1,0 +1,109 @@
+
+.top-catalog{
+    height: 400px;
+    background-image: url(img/Catalog.jpg.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.heading__catalog{
+    color: $primary-color;
+    font-size: 64px;
+    font-weight: $weight-600;
+    line-height: 70px;
+    text-align: left;
+    margin-top: 128px;
+    margin-bottom: 126px;
+}
+.line__link-ctg{
+    margin-top: 64px;
+    margin-bottom: 42px;
+}
+.line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+&__link{
+    color: $headingColor;
+    font-size: 16px;
+    font-weight: $weight-400;
+    line-height: 32px;
+    text-align: left;
+}
+
+&__link_margin{
+    margin-right: 10px;
+    margin-left: 10px;
+}
+}
+.filter{
+position: relative;
+padding-top: 60px;
+font-size: 0;
+
+&__line-filter{
+    color: $headingColor;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: $weight-500;
+    line-height: 20px;
+    text-align: left;
+    box-sizing: border-box;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 20px;
+    appearance: none;
+    background-color: transparent;
+    background-image: url(img/filter.svg.svg);
+    background-repeat: no-repeat;
+    background-position-x: 140px;
+    background-position-y: 14px;
+    padding: 9px 54px 11px 23px;
+}
+
+&__line-popular{
+    color: $headingColor;
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: $weight-400;
+    line-height: 20px;
+    text-align: left;
+    box-sizing: border-box;
+    border: 1px solid rgb(196, 196, 196);
+    appearance: none;
+    border-radius: 20px;
+    background-image: url(img/filter.svg.svg);
+    background-repeat: no-repeat;
+    background-position-x: 185px;
+    background-position-y: 14px;
+    padding: 9px 56px 11px 23px;
+    margin-left: 10px;
+}
+}
+.ctg-product{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+.show{
+    margin-top: 32px;
+    margin-bottom: 64px;    
+
+&__link{
+    color: $headingColor;
+    font-size: 16px;
+    font-weight: $weight-400;
+    line-height: 24px;
+    text-align: left;
+    text-decoration-line: underline;
+}
+&__link_hover:hover{
+    color: $secondary-color;
+    font-size: 16px;
+    font-weight: $weight-400;
+    line-height: 24px;
+    text-align: left;
+    text-decoration: none;
+}
+}

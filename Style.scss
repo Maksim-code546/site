@@ -1,0 +1,523 @@
+  
+ @import 'variables'; 
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .center {
+    padding-left: calc(50% - 600px);
+    padding-right: calc(50% - 600px);
+  }
+  
+  .top {
+    height: 735px;
+    background-image: url(img/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 20px;
+  }
+  
+  .top__text {
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 16px;
+    color: $primary-color;
+  }
+  
+  .title {
+    font-weight: $weight-600;
+    font-size: 64px;
+    line-height: 70px;
+    margin-top: 64px;
+    margin-bottom: 16px;
+    color: $primary-color;
+    
+    max-width: 792px;
+  }
+  
+  .header {
+    border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+    height: 76px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header__logo {
+    font-size: 36px;
+    font-weight: $weight-600;
+    line-height: 44px;
+    text-align: left;
+    color: $primary-color;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+  
+  .header__input {
+    width: 288px;
+    height: 41px;
+    border: 1px solid $primary-color;
+    border-radius: 20px;
+    background-color: transparent;
+    outline: none;
+    font-weight: $weight-400;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: $primary-color;
+    padding-left: 32px;
+    padding-right: 32px;
+    box-sizing: border-box;
+  }
+  
+  .header__input::-moz-placeholder {
+    font-family: "Montserrat", sans-serif;
+    color: $primary-color;
+    font-size: 16px;
+    font-weight: $weight-400;
+    line-height: 20px;
+    text-align: left;
+  }
+  
+  .header__input::placeholder {
+    font-family: "Montserrat", sans-serif;
+    color: $primary-color;
+    font-size: 16px;
+    font-weight: $weight-400;
+    line-height: 20px;
+    text-align: left;
+  }
+  
+  .menu__flex {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .menu__marker {
+    list-style-type: none;
+  }
+  
+  .menu__link {
+    font-size: 16px;
+    line-height: 20px;
+    color: $primary-color;
+  }
+  
+  .menu__link:hover {
+    text-decoration: underline;
+  }
+
+  .mobile{
+    display: none;
+  }
+  
+  .link__catalog {
+    margin-top: 30px;
+    margin-bottom: 34px;
+  }
+  
+  .link {
+    font-size: 16px;
+    line-height: 24px;
+    color: $primary-color;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
+  .link-bot {
+    padding-top: 32px;
+    padding-bottom: 64px;
+  }
+  
+  .link-bot__product {
+    font-size: 16px;
+    font-weight: $weight-400;
+    line-height: 24px;
+    text-align: left;
+    text-decoration: underline;
+    color: $headingColor;
+  }
+  
+  .link-bot__product_hover:hover {
+    color: $secondary-color;
+    text-decoration: none;
+  }
+  
+  .for-box__content {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+  }
+  
+  .for-box__item {
+    height: 415px;
+    grid-column: span 4;
+    color: $primary-color;
+    font-size: 34px;
+    font-weight: $weight-600;
+    line-height: 41px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .for-box__item_big {
+    grid-column: span 6;
+  }
+  
+  .for-box__heading {
+    color: $headingColor;
+    font-size: 48px;
+    font-weight: $weight-600;
+    line-height: 59px;
+    text-align: left;
+    margin-top: 26px;
+    margin-bottom: 32px;
+  }
+  
+  .for-box__item_1 {
+    background-image: url(img/for1.jpeg);
+  }
+  
+  .for-box__item_2 {
+    background-image: url(img/for2.jpeg);
+  }
+  
+  .for-box__item_3 {
+    background-image: url(img/for3.jpeg);
+  }
+  
+  .for-box__item_4 {
+    background-image: url(img/for4.jpeg);
+  }
+  
+  .for-box__item_5 {
+    background-image: url(img/for5.jpeg);
+  }
+  
+  .product__offer {
+    font-weight: $weight-600;
+    font-size: 48px;
+    line-height: 60px;
+    color: $headingColor;
+    margin-bottom: 32px;
+    padding-top: 64px;
+  }
+  
+  .product-card {
+    width: 378px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .card-icons{
+    display: none;
+  }
+
+  .product-card:hover .card-icons{
+    top: 11px;
+    right: 10px;
+    display: flex;
+    gap: 21px;
+    position: absolute;
+    align-items: center;
+  }
+  
+  .product__box-price {
+    display: flex;
+    gap: 32px;
+  }
+  
+  .product__content {
+    display: flex;
+    gap: 32px;
+    flex-wrap: wrap;
+  }
+  
+  .product-card__img {
+    width: 100%;
+  }
+  
+  .product-card__heading {
+    font-weight: $weight-500;
+    font-size: 24px;
+    line-height: 30px;
+    color: $headingColor;
+    margin-top: 10px;
+    margin-bottom: 8px;
+  }
+  
+  .product-card__description {
+    font-weight: $weight-400;
+    font-size: $text-size;
+    line-height: 18px;
+    color: $secondary-color;
+    margin-bottom: 12px;
+  }
+  
+  .product-card__price {
+    font-weight: $weight-500;
+    font-size: 24px;
+    line-height: 30px;
+    color: $color-price;
+  }
+  
+  .product-card__oldprice {
+    font-weight: $weight-500;
+    font-size: 24px;
+    line-height: 30px;
+    text-decoration-line: line-through;
+    color: $secondary-color;
+  }
+  
+  .product__title {
+    font-weight: $weight-600;
+    font-size: 48px;
+    line-height: 60px;
+    color: $headingColor;
+    margin-bottom: 32px;
+    margin-top: 64px;
+  }
+  
+  .product__catalog {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  
+  .contact {
+    font-weight: $weight-500;
+    font-size: 24px;
+    line-height: 29px;
+    color: $headingColor;
+    padding-bottom: 12px;
+    padding-top: 32px;
+  }
+  
+  .contact-link__marker {
+    list-style-type: none;
+    padding-bottom: 12px;
+  }
+  
+  .footer {
+    height: 208px;
+    background: rgb(247, 246, 246);
+  }
+  
+  .footer__logo {
+    width: 198px;
+    height: 44px;
+    padding-top: 32px;
+  }
+  
+  .footer__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer__nav-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  
+  .footer__menu {
+    font-size: 24px;
+    font-weight: $weight-500;
+    line-height: 29px;
+    text-align: left;
+    color: $headingColor;
+    padding-top: 32px;
+    padding-bottom: 12px;
+  }
+  
+  .footer__input {
+    width: 260px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: $weight-400;
+    line-height: 15px;
+    text-align: left;
+    color: rgb(196, 196, 196);
+    box-sizing: border-box;
+    border: 1px solid rgb(196, 196, 196);
+    border-radius: 16px;
+    background: $primary-color;
+    padding-left: 17px;
+    padding-right: 17px;
+    margin-bottom: 8px;
+    font-family: "Montserrat", sans-serif;
+    outline: none;
+  }
+  
+  .footer__input::-moz-placeholder {
+    color: rgb(196, 196, 196);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: $weight-400;
+    line-height: 15px;
+    text-align: left;
+  }
+  
+  .footer__input::placeholder {
+    color: rgb(196, 196, 196);
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: $weight-400;
+    line-height: 15px;
+    text-align: left;
+  }
+  
+  .footer__item {
+    font-weight: $weight-400;
+    font-size: $text-size;
+    line-height: 17px;
+    color: $secondary-color;
+  }
+  
+  .footer__item_hover:hover {
+    text-decoration: underline;
+  }
+  
+  .footer__info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 129px;
+  }
+  
+  .footer-icons__vk_hover:hover .footer-icons__path {
+    fill: $headingColor;
+  }
+
+  .footer-icons__vk_hover .footer-icons__path{
+    transition: 1s;
+  }
+  
+  .footer-icons__telegram {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .footer-icons__telegram_hover:hover .footer-icons__path {
+    fill: $headingColor;
+  }
+
+  .footer-icons__telegram_hover .footer-icons__path{
+    transition: 1s;
+  }
+  
+  .footer-icons__dzen_hover:hover .footer-icons__path {
+    fill: $headingColor;
+  }
+
+  .footer-icons__dzen_hover .footer-icons__path{
+    transition: 1s;
+  }
+  
+  
+  .footer__link {
+    font-size: $text-size;
+    font-weight: $weight-500;
+    line-height: 17px;
+    text-align: left;
+    color: $secondary-color;
+  }
+  
+  .fotter-contact-link {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .footer-form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .footer__form-news {
+    font-size: 12px;
+    font-weight: $weight-400;
+    line-height: 15px;
+    text-align: left;
+    color: $headingColor;
+    padding-top: 32px;
+    padding-bottom: 8px;
+  }
+  
+  .footer__btn {
+    font-family: "Montserrat", sans-serif;
+    background: rgba(222, 215, 215, 0.41);
+    border: 1px solid $primary-color;
+    box-sizing: border-box;
+    border-radius: 16px;
+    width: 260px;
+    height: 40px;
+    color: $headingColor;
+    font-size: 12px;
+    font-weight: $weight-400;
+    line-height: 15px;
+    text-align: left;
+    padding-left: 85px;
+    padding-right: 93px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .footer__btn:hover {
+    box-sizing: border-box;
+    border: 1px solid $primary-color;
+    border-radius: 20px;
+    color: $primary-color;
+    font-size: $text-size;
+    font-weight: $weight-500;
+    line-height: 17px;
+    text-align: left;
+    background: $headingColor;
+  }
+  
+  .footer__marker {
+    color: $secondary-color;
+    font-size: $text-size;
+    font-weight: $weight-500;
+    line-height: 17px;
+    text-align: left;
+    list-style-type: none;
+    padding-bottom: 12px;
+  }
+  
+  .tel {
+    font-weight: $weight-400;
+    font-size: $text-size;
+    line-height: 17px;
+    color: $secondary-color;
+  }
+  
+  .mail {
+    font-weight: $weight-400;
+    font-size: $text-size;
+    line-height: 17px;
+    color: $secondary-color;
+  }
+  
+  @import 'Catalog';
+  @import 'Basket';
+  @import 'FormCatalog';
+  @import 'media';
+  @import 'formmainpg'
