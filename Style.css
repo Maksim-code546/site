@@ -102,6 +102,7 @@ a {
 
 .menu__marker {
   list-style-type: none;
+  position: relative;
 }
 
 .menu__link {
@@ -1560,10 +1561,6 @@ a {
     gap: 0;
   }
 }
-.menu__marker {
-  position: relative;
-}
-
 .form-main {
   width: 573px;
   height: 480px;
