@@ -53,7 +53,8 @@
     gap: 44px;
     margin-top: 35px;
     margin-left: 28px;
-    width: 288px;
+    margin-right: 28px;
+    max-width: 288px;
   }
 
   &-form__name{
@@ -164,7 +165,7 @@
   &__info{
     display: flex;
     flex-direction: column;
-    width: 276px;
+    max-width: 276px;
     gap: 16px;
   }
 
@@ -268,6 +269,8 @@
   }
 
   &-btn__form{
+    display: flex;
+    gap: 7px;
     font-size: 16px;
   }
 
@@ -282,7 +285,6 @@
     border-radius: 50px;
     padding: 10px 34px 10px 33px;
     background-color: transparent;
-    margin-right: 7px;
     transition: 0.3s;
   }
 
